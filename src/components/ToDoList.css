@@ -1,0 +1,47 @@
+.to-do-list {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+button {
+    font-size: 1.7rem;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(55, 168, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+button:hover {
+    background-color: rgb(36, 131, 204);
+}
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+ol {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.text {
+    color: black;
+}

@@ -1,0 +1,137 @@
+.to-do-list {
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    color: red;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(55, 168, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    font-family: 'Indie Flower', normal;
+}
+
+button:hover {
+    background-color: rgb(36, 131, 204);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+    font-family: 'Indie Flower', normal;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    background-color: transparent;
+    width: -webkit-fill-available;
+}
+
+.task {
+    color: black;
+    text-align: left;
+    width: 70%;
+    margin-left: 50px;
+    padding: 5px;
+    overflow-wrap: break-word;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        padding-top: 15px;
+    }
+    
+    button {
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+
+    input[type="text"] {
+        font-size: 1.4rem;
+        padding: 8px;
+    }
+
+    li {
+        font-size: 1.8rem;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .task {
+        width: 60%;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+        padding-top: 0;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    input[type="text"] {
+        font-size: 1.2rem;
+        padding: 6px;
+    }
+
+    li {
+        font-size: 1.5rem;
+        padding: 3px;
+        margin: 3px;
+        align-items: flex-start;
+    }
+
+    .task {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -40,7 +40,7 @@ function ToDoList() {
 
   return (
     <div className='to-do-list' style={{ backgroundImage: `url(${backgroundimg})`}}>
-      <h1>To Do List</h1>
+      <h1>☑︎ To Do List</h1>
       <div>
         <input type="text" placeholder='Enter a task' value={newTask} onChange={handleNewTask} />
         <button className="add-button" onClick={addTask}>Add</button>

@@ -1,6 +1,6 @@
 import './ToDoList.css';
 import React, { useState } from "react";
-
+import backgroundimg from '../assets/img/sheet.png';
 function ToDoList() {
 
   const [tasks, setTasks] = useState([]);
@@ -39,7 +39,7 @@ function ToDoList() {
   };
 
   return (
-    <div className='to-do-list'>
+    <div className='to-do-list' style={{ backgroundImage: `url(${backgroundimg})`}}>
       <h1>To Do List</h1>
       <div>
         <input type="text" placeholder='Enter a task' value={newTask} onChange={handleNewTask} />
@@ -51,11 +51,11 @@ function ToDoList() {
             <span className='task'>{task}</span>
             <div className='buttons'>
               <button className='delete-button' onClick={() => deleteTask(index)}>Delete</button>
-            <button className='move-button' onClick={() => moveTaskUp(index)}>⬆︎</button>
-            <button className='move-button' onClick={() => moveTaskDown(index)}>⬇︎</button>
+              <button className='move-button' onClick={() => moveTaskUp(index)}>⬆︎</button>
+              <button className='move-button' onClick={() => moveTaskDown(index)}>⬇︎</button>
             </div>
           </li>
-          ))}
+        ))}
       </ol>
     </div>
   );
